@@ -1,0 +1,63 @@
+POST http://localhost:5000/api/v1/auth/register
+content-type: application/json
+
+{
+    "username": "calvin1234",
+    "password": "calvin1234",
+    "confirmPassword": "calvin1234"
+}
+
+###
+
+POST http://localhost:5000/api/v1/auth/login
+content-type: application/json
+
+{
+    "username": "calvin",
+    "password": "calvin"
+}
+
+###
+
+GET http://localhost:5000/api/v1/products
+    ?featured=false
+    &company=liddy
+    # &name=a
+    # &sort=-price
+    # &fields=name,price,rating
+    &page=2
+    &limit=2
+    # &numericFilters=price>100,rating>=4.5
+
+###
+
+GET http://localhost:5000/api/v1/products/static?name=calvin
+
+###
+
+GET http://localhost:5000/api/v1/products/63216429ef57219c7f16ff12
+
+###
+
+POST http://localhost:5000/api/v1/products
+content-type: application/json
+
+{
+    "title": ""
+}
+
+###
+
+PATCH  http://localhost:5000/api/v1/products/631b831760efc522837da2a4
+content-type: application/json
+
+{
+    "title": "minum",
+    "completed": true
+}
+
+###
+
+DELETE  http://localhost:5000/api/v1/products/63200f687b7095394f846bb1
+
+###
