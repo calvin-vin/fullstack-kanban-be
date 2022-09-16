@@ -1,8 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const { body } = require("express-validator");
+const { StatusCodes } = require("http-status-codes");
 
 const { login, register } = require("../controllers/user");
+const authenticationMiddleware = require("../middlewares/auth");
 const validateHandler = require("../middlewares/validation-handler");
 const User = require("../models/User");
 
@@ -27,6 +29,7 @@ router.post(
   validateHandler,
   register
 );
+
 router.post(
   "/login",
   body("username")
@@ -38,5 +41,9 @@ router.post(
   validateHandler,
   login
 );
+
+router.post("/verify-token", authenticationMiddleware, (req, res) => {
+  res.status(StatusCodes.OK).json({ user: req.user });
+});
 
 module.exports = router;
