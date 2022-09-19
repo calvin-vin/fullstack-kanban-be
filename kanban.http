@@ -13,9 +13,15 @@ POST http://localhost:5000/api/v1/auth/login
 content-type: application/json
 
 {
-    "username": "calvin",
-    "password": "calvin"
+    "username": "calvin1234",
+    "password": "calvin1234"
 }
+
+###
+
+POST http://localhost:5000/api/v1/auth/verify-token
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2MzU2MDI2MCwiZXhwIjoxNjYzNjQ2NjYwfQ.BJxgNz6YvGNYwAFCpEbaNcEO_3Wg3MZSxe94TYuT2Kg
 
 ###
 
