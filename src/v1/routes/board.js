@@ -1,8 +1,19 @@
 const express = require("express");
 const router = express.Router();
-const { create, getAll } = require("../controllers/board");
-const authenticationMiddleware = require("../middlewares/auth");
 
-router.route("/", authenticationMiddleware).get(getAll).post(create);
+const {
+  create,
+  getAll,
+  updatePosition,
+  getOne,
+  update,
+  updateFavouritePosition,
+  getFavourites,
+  deleteBoard,
+} = require("../controllers/board");
+
+router.route("/").get(getAll).post(create).put(updatePosition);
+router.route("/favourites").get(getFavourites).put(updateFavouritePosition);
+router.route("/:boardId").get(getOne).put(update).delete(deleteBoard);
 
 module.exports = router;

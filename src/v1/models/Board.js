@@ -17,7 +17,7 @@ const BoardSchema = new Schema(
       type: String,
       default: "Untitled",
     },
-    descrption: {
+    description: {
       type: String,
       default: `Add description here
         🟢 You can add multiline description

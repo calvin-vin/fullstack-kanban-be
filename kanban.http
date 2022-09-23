@@ -25,19 +25,27 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZ
 
 ###
 
-GET http://localhost:5000/api/v1/products
-    ?featured=false
-    &company=liddy
-    # &name=a
-    # &sort=-price
-    # &fields=name,price,rating
-    &page=2
-    &limit=2
-    # &numericFilters=price>100,rating>=4.5
+GET  http://localhost:5000/api/v1/boards
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2MzkyMTAwNCwiZXhwIjoxNjY0MDA3NDA0fQ.n-5tnlpKg47quedEMQ_ZhSbiFUrw5BYE1k46M-7CAy4
 
 ###
 
-GET http://localhost:5000/api/v1/products/static?name=calvin
+POST  http://localhost:5000/api/v1/boards
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2MzkyMTAwNCwiZXhwIjoxNjY0MDA3NDA0fQ.n-5tnlpKg47quedEMQ_ZhSbiFUrw5BYE1k46M-7CAy4
+
+###
+
+GET  http://localhost:5000/api/v1/boards/63295e6d100335d0f59a43fb
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2MzkyMTAwNCwiZXhwIjoxNjY0MDA3NDA0fQ.n-5tnlpKg47quedEMQ_ZhSbiFUrw5BYE1k46M-7CAy4
+
+###
+
+PUT  http://localhost:5000/api/v1/boards/63295e6d100335d0f59a43fb
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2MzkyMTAwNCwiZXhwIjoxNjY0MDA3NDA0fQ.n-5tnlpKg47quedEMQ_ZhSbiFUrw5BYE1k46M-7CAy4
 
 ###
 
