@@ -9,5 +9,10 @@ router.use(
   authenticationMiddleware,
   require("./section")
 );
+router.use(
+  "/boards/:boardId/tasks",
+  authenticationMiddleware,
+  require("./task")
+);
 
 module.exports = router;
