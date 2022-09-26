@@ -27,29 +27,41 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZ
 
 GET  http://localhost:5000/api/v1/boards
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2MzkyMTAwNCwiZXhwIjoxNjY0MDA3NDA0fQ.n-5tnlpKg47quedEMQ_ZhSbiFUrw5BYE1k46M-7CAy4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2NDE2MDM5NiwiZXhwIjoxNjY0MjQ2Nzk2fQ.zeiLGzm2MfCGIlMAtY-B4_l5DEubYNXMg5kjhdcRQeY
 
 ###
 
 POST  http://localhost:5000/api/v1/boards
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2MzkyMTAwNCwiZXhwIjoxNjY0MDA3NDA0fQ.n-5tnlpKg47quedEMQ_ZhSbiFUrw5BYE1k46M-7CAy4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2NDE2MDM5NiwiZXhwIjoxNjY0MjQ2Nzk2fQ.zeiLGzm2MfCGIlMAtY-B4_l5DEubYNXMg5kjhdcRQeY
 
 ###
 
-GET  http://localhost:5000/api/v1/boards/63295e6d100335d0f59a43fb
+GET  http://localhost:5000/api/v1/boards/6329535bcb2fcba6106fb513
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2MzkyMTAwNCwiZXhwIjoxNjY0MDA3NDA0fQ.n-5tnlpKg47quedEMQ_ZhSbiFUrw5BYE1k46M-7CAy4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2NDE2MDM5NiwiZXhwIjoxNjY0MjQ2Nzk2fQ.zeiLGzm2MfCGIlMAtY-B4_l5DEubYNXMg5kjhdcRQeY
 
 ###
 
 PUT  http://localhost:5000/api/v1/boards/63295e6d100335d0f59a43fb
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2MzkyMTAwNCwiZXhwIjoxNjY0MDA3NDA0fQ.n-5tnlpKg47quedEMQ_ZhSbiFUrw5BYE1k46M-7CAy4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2NDE2MDM5NiwiZXhwIjoxNjY0MjQ2Nzk2fQ.zeiLGzm2MfCGIlMAtY-B4_l5DEubYNXMg5kjhdcRQeY
 
 ###
 
-GET http://localhost:5000/api/v1/products/63216429ef57219c7f16ff12
+DELETE  http://localhost:5000/api/v1/boards/6329535bcb2fcba6106fb513/sections/633110f69cf67ea952b14411
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2NDE2MDM5NiwiZXhwIjoxNjY0MjQ2Nzk2fQ.zeiLGzm2MfCGIlMAtY-B4_l5DEubYNXMg5kjhdcRQeY
+
+### 
+
+PUT  http://localhost:5000/api/v1/boards/6329535bcb2fcba6106fb513/sections/633110f49cf67ea952b14409
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjJlNTFiZTFlY2ZlMDhmNjE0NTAxOSIsImlhdCI6MTY2NDE2MDM5NiwiZXhwIjoxNjY0MjQ2Nzk2fQ.zeiLGzm2MfCGIlMAtY-B4_l5DEubYNXMg5kjhdcRQeY
+
+{
+    "title": "mandi"
+}
 
 ###
 
